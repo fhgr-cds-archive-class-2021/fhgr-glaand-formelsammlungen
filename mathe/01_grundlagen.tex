@@ -1,0 +1,115 @@
+\noindent
+\paragraph{Grundlagen}\mbox{}\\
+\paragraph{Symbole}\mbox{}\\
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    $\exists$: Existiert mind. 1 & $\exists!$: Existiert genau 1 \\ \hline
+    $\nexists$: Existiert nicht  & $\forall$: Für alle           \\ \hline
+\end{tabularx}
+\vspace{1mm}
+
+\noindent
+\textit{Menge und Elemente gemäss CANTOR}\linebreak
+\begin{itemize}
+    \item Unter eine Menge verstehen wir jede Zusammenfassung von bestimmten wohlunterschiedenen Objekten (Elemente) unserer Anschauung oder unseres Denkens zu einem Ganzen.
+    \item Sei $A$ eine Menge und $x$ ein $Element$ von $A$. Die Aussage, dass $x$ ein $Element$ von $A$ ist, wird geschrieben gemäss: \fbox{$x \in A$}
+    \item Verneinung: \fbox{$x \notin A$}
+    \item Leere Menge: \fbox{$ \varnothing = \{\} $}
+    \item Menge A besteht aus Elementen von Grundmenge G, bei welchen Elemente gegebene Kriterien erfüllenn:
+    \item $A = \{x \in G\,|\,x$ hat die Eigenschaften...$ \}$
+    \item Bsp für N. Zahlen von 1 bis 4: $A = \{x \in \mathbb{N} \,|\,1 \leq  x \leq  4 \}$
+    \item Teilmenge: \fbox{$A \subseteq B \leftrightarrow (x \in A \rightarrow x \in B) $}
+    \item Strikte Teilmenge: \fbox{$A \subset B \leftrightarrow (A \subseteq B \land A \neq B) $}
+    \item Verneinung Teilmenge: $\nsubseteq$
+    \item Verneinung Strikte Teilmenge: $\not\subset$
+\end{itemize}
+\vspace{1mm}
+
+\noindent
+\textit{Mengenoperationen}\linebreak
+\begin{itemize}
+    \item Vereinigung: $A \cap B := \{x\,|\,x \in A\, \lor\, x \in B \}$
+    \item \includegraphics[width=50pt]{./images/vereinigung.jpg}
+    \item Schnittmenge: $A \cup B := \{x\,|\,x \in A\, \land\, x \in B \}$
+    \item \includegraphics[width=50pt]{./images/schnittmenge.jpg}
+    \item Differenz: $A \backslash B := \{x\,|\,x \in A\, \land\, x \notin B \}$
+    \item \includegraphics[width=50pt]{./images/differenz.jpg}
+    \item Symmetrische Differenz: $A\Delta B := (A\backslash B)\cup (B\backslash A)$
+    \item \includegraphics[width=50pt]{./images/systematische_differenz.jpg}
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Mengen Rechenregeln}\mbox{}\\
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    $B\cup A = A\cup B$                                              & $B\cap A = A \cap B$                                                      \\ \hline
+    $(A\cup B)\cup C = A\cup (B\cup C)$                              & $(A\cap B)\cap C = A\cap (B\cap C)$                                       \\ \hline
+    $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$                      & $A\cup (B\cap C) = (A\cup B)\cap (A\cup C)$                               \\ \hline
+    $A\cup (A\cap B) = A$                                            & $A\cap (A\cup B) = A$                                                     \\ \hline
+    $(A\backslash B)\backslash C = A \backslash (B\cup C)$           & $A\backslash (B\backslash C) = (A \backslash B)\cup (A\cap C)$            \\ \hline
+    $(A\cup B) \backslash C = (A \backslash C) \cup (B\backslash C)$ & $(A\cap B) \backslash C = (A \backslash C) \cap (B \backslash C)$         \\ \hline
+    $A\backslash (B\cup C) = (A \backslash B)\cap (A \backslash C)$  & $ A\backslash(B\cap C) = (A\backslash B) \cup (A \backslash C) $          \\ \hline
+    $B\Delta A = A\Delta B$                                          & $(A\Delta B)\Delta C = A\Delta (B\Delta C)$                               \\ \hline
+    $(A\Delta B)\cap C = (A\cap C)\Delta (B\cap C)$                  &                                                                           \\ \hline
+    $\overline{A\cup B} = \overline{A}\cap \overline{B}$             & $\overline{A\cap B} = \overline{A}\cup \overline{B}$                      \\ \hline
+    $\overline{A\cup B} = G\backslash (A\cup B) =$                   & $ = (G\backslash A) \cap (G\backslash B) = \overline{A}\cap \overline{B}$ \\ \hline
+    $\overline{A\cap B} = G\backslash (A\cap B) =$                   & $ = (G\backslash A) \cup (G\backslash B) = \overline{A}\cup \overline{B}$ \\ \hline
+\end{tabularx}
+\vspace{1mm}
+
+\noindent
+\textit{Kreuzprodukt}\linebreak
+\fbox{$A\, \times B := \{(x;y)\, |\, x \in A\, und\, y \in B\}$}
+\vspace{1mm}
+
+\paragraph{Zahlenmenge}\mbox{}\\
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    $\mathbb{N}$: natürlichen Zahlen & $\mathbb{N}_0$: natürlichen Zahlen mit die Zahl 0 \\ \hline
+    $\mathbb{Z}$: ganze Zahlen       & $\mathbb{Q}$: rationale Zahlen                    \\ \hline
+    $\mathbb{R}$: reelle Zahlen      & $\mathbb{C}$: Komplexe Zahlen                     \\ \hline
+\end{tabularx}
+\vspace{1mm}
+
+\paragraph{Intervalle}\mbox{}\\
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    [a,b] = $\{x \in \mathbb{R} | a \leq  x \leq b \}$ & ]a,b] = $\{x \in \mathbb{R} | a < x \leq b \}$ \\ \hline
+    [a,b[ = $\{x \in \mathbb{R} | a \leq  x < b \}$    & ]a,b[ = $\{x \in \mathbb{R} | a < x < b \}$    \\ \hline
+    $\mathbb{R}^{+}_0 = [0,\infty]$                    & $\mathbb{R}^{+} = ]0,\infty]$                  \\ \hline
+\end{tabularx}
+\vspace{1mm}
+
+\paragraph{Körperaxiome}\mbox{}\\
+\noindent
+Addition\linebreak
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    Assoziativgesetz      & $x+(y+z) = (x+y)+z$                                                  \\ \hline
+    Kommutativgesetz      & $x+y = y+x$                                                          \\ \hline
+    Existenz der Null     & $\exists$ eine Zahl 0 $\in \mathbb{R}$:\linebreak $0+x=x, \forall x$ \\ \hline
+    Existenz der Negation & $\forall x\exists -x$: $x+(-x) = 0$                                  \\ \hline
+\end{tabularx}
+\vspace{1mm}
+\noindent
+Multiplikation\linebreak
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    Assoziativgesetz      & $x*(y*z) = (x*y)*z$                               \\ \hline
+    Kommutativgesetz      & $x*y = y*x$                                       \\ \hline
+    Existenz der Eins     & $\exists (1\in \mathbb{R}) \land 1 \neq 0: 1*x=x$ \\ \hline
+    Existenz der Inversen & $\forall x \neq 0, \exists x^{-1}: x*x^{-1}=1$                   \\ \hline
+    Distributivgesetz     & $x*(y+z) = x*y + x*z = 1$                                                  \\ \hline
+\end{tabularx}
+\vspace{1mm}
+
+\paragraph{Funktionen}\mbox{}\\
+\begin{tabularx}{\columnwidth}{@{}X|X@{}}
+    \hline
+    $f : A \rightarrow B$               & $x \rightarrow f(x) := Kondition$   \\ \hline
+    $f : \{3,4\} \rightarrow \{5,6,7\}$ & $x \rightarrow f(x) := x + 2$       \\ \hline
+    $f$: Funktionsname                  & $A$: Definitionsmenge               \\ \hline
+    $B$: Zielmenge                      & $x$: unabhängige Variable, Argument \\ \hline
+    $f(x)$: abhängige Variable, Funktionswert                                 \\ \hline
+\end{tabularx}
+\vspace{1mm}
