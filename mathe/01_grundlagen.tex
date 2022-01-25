@@ -36,6 +36,8 @@
     \item \includegraphics[width=50pt]{./images/differenz.jpg}
     \item Symmetrische Differenz: $A\Delta B := (A\backslash B)\cup (B\backslash A)$
     \item \includegraphics[width=50pt]{./images/systematische_differenz.jpg}
+    \item Komplementierung (G Grundmenge): $\overline{A} := G\backslash A$
+    \item \includegraphics[width=80pt]{./images/komplementaer.jpg}
 \end{itemize}
 \vspace{1mm}
 
@@ -58,7 +60,7 @@
 \vspace{1mm}
 
 \noindent
-\textit{Kreuzprodukt}\linebreak
+\textit{Kartesisches Produkt}\linebreak
 \fbox{$A\, \times B := \{(x;y)\, |\, x \in A\, und\, y \in B\}$}
 \vspace{1mm}
 
@@ -98,18 +100,90 @@ Multiplikation\linebreak
     Assoziativgesetz      & $x*(y*z) = (x*y)*z$                               \\ \hline
     Kommutativgesetz      & $x*y = y*x$                                       \\ \hline
     Existenz der Eins     & $\exists (1\in \mathbb{R}) \land 1 \neq 0: 1*x=x$ \\ \hline
-    Existenz der Inversen & $\forall x \neq 0, \exists x^{-1}: x*x^{-1}=1$                   \\ \hline
-    Distributivgesetz     & $x*(y+z) = x*y + x*z = 1$                                                  \\ \hline
+    Existenz der Inversen & $\forall x \neq 0, \exists x^{-1}: x*x^{-1}=1$    \\ \hline
+    Distributivgesetz     & $x*(y+z) = x*y + x*z = 1$                         \\ \hline
 \end{tabularx}
 \vspace{1mm}
 
 \paragraph{Funktionen}\mbox{}\\
 \begin{tabularx}{\columnwidth}{@{}X|X@{}}
     \hline
-    $f : A \rightarrow B$               & $x \rightarrow f(x) := Kondition$   \\ \hline
-    $f : \{3,4\} \rightarrow \{5,6,7\}$ & $x \rightarrow f(x) := x + 2$       \\ \hline
-    $f$: Funktionsname                  & $A$: Definitionsmenge               \\ \hline
-    $B$: Zielmenge                      & $x$: unabhängige Variable, Argument \\ \hline
-    $f(x)$: abhängige Variable, Funktionswert                                 \\ \hline
+    $f : A \rightarrow B$                           & $x \rightarrow f(x) := Kondition$   \\ \hline
+    $f : \{3,4\} \rightarrow \{5,6,7\}$             & $x \rightarrow f(x) := x + 2$       \\ \hline
+    $f$: Funktionsname                              & $A$: Definitionsmenge               \\ \hline
+    $B$: Zielmenge                                  & $x$: unabhängige Variable, Argument \\ \hline
+    $f(x)$: abhängige Variable, Funktionswert                                             \\ \hline
+    $f(y)^{-1}: Umkehrfunktion$                                                           \\ \hline
+    Identität ist die Funktion zwischen zwei Mengen & $id_A : B \rightarrow A$            \\ \hline
 \end{tabularx}
+\vspace{1mm}
+
+\paragraph{Bild und Urbild}\mbox{}\\
+Seien A und B zwei Mengen, $f: A \rightarrow B$ eine Funktion und $\overline{A} \subseteq A$ sowie $\overline{B} \subseteq B$.
+\begin{itemize}
+    \item Bild: $f(\overline{A}) \subseteq B$
+    \item Urbild: $f^{-1}(\overline{B}) \subseteq A$
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Surjektiv}\mbox{}\\
+\begin{itemize}
+    \item Zu jedem $y\in B$ aus dem Zielbereich mindestens ein $x\in A$ aus dem Definitionsbereich
+    \item f heisst surjektiv: $\forall y \in B, \forall x \in A$
+    \item $y= f(x)$
+    \item Beweis: $y = f(x)$
+    \item 1. Nach x auflösen
+    \item 2. Ausdruck hängt von y ab
+    \item 3. Überprüfen, ob dieser Ausdruck für alle y aus $y\in B$ definiert ist und ein Teil von A ist
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Injektiv}\mbox{}\\
+\begin{itemize}
+    \item Für jedes Element $y\in B$ höchstens ein Element $x\in A$ wobei $f(x)=y$
+    \item Annahme: $f(x_1) = f(x_2)$, Ziel: $x_1 = x_2$
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Reihen und Folgen}\mbox{}\\
+\begin{itemize}
+    \item \fbox{$a: \mathbb{N}\rightarrow B$,  $n \rightarrow a(n)$}
+    \item Arithmetische Folge, $\forall c \in \mathbb{R},$ so dass $\forall k \in \mathbb{N}^{+}$
+    \item $a_{k+1} = a_{k} + c$
+    \item Geometrische Folge, $\forall c \in \mathbb{R},$ so dass $\forall k \in \mathbb{N}^{+}$
+    \item $a_{k+1} = a_{k} * c$
+    \item Arithmetische Folge ist die diskrete Version einer linearen Funktion:
+    \item $a_n = a_0 + c * n$
+    \item Geometrische Folge ist die diskrete Version einer Exponentialfunktion:
+    \item $a_n= a_0 * c^n$ \\
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Beschrankte Folgen}\mbox{}\\
+\begin{itemize}
+    \item Oben beschränkt: \fbox{$a_n \leq a_O$}
+    \item Unten beschränkt: \fbox{$a_n \geq a_U$}
+    \item Die folge $a_n$ heisst beschränkt wenn: \fbox{$a_n \in [a_U,a_O]$}
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Monotone Folgen}\mbox{}\\
+\begin{itemize}
+    \item Monoton steigend: \fbox{$a_{k+1} \geq a_k $}
+    \item Monoton streng steigend: \fbox{$a_{k+1} > a_k $}
+    \item Monoton fallend: \fbox{$a_{k+1} \leq a_k $}
+    \item Monoton streng fallend: \fbox{$a_{k+1} < a_k $}
+\end{itemize}
+\vspace{1mm}
+
+\paragraph{Monotonie untersuchen}\mbox{}\\
+\begin{itemize}
+    \item Um eine Folge auf Monotonie zu untersucen, kann man die Folgeglieder der Differenzenfolge gegen Null abschätzen
+    \item \fbox{$d_n := a_{n+1} - a_{n}$}
+    \item Resultat interpretieren:
+    \item $d_n \geq 0 \leftrightarrow a_{n+1} \geq a_n \leftrightarrow a_n$ ist monoton steigend
+    \item $d_n > 0 \leftrightarrow a_{n+1} > a_n \leftrightarrow a_n$ ist streng monoton steigend
+    \item $d_n \leq 0 \leftrightarrow a_{n+1} \leq a_n \leftrightarrow a_n$ ist monoton fallend
+    \item $d_n < 0 \leftrightarrow a_{n+1} < a_n \leftrightarrow a_n$ ist streng monoton fallend
+\end{itemize}
 \vspace{1mm}
